@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Mentor | FAQ Accordion Card">
+  <link rel="icon" type="image/png" sizes="32x32" href="./docs/images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="./public/main.css">
+</head>
+
+<body class="font-kumbhSans min-h-screen bg-gradient-to-b from-violet to-bluish-500">
+  <div class="max-w-screen-lg w-full mx-auto px-8 pt-32">
+    <!-- faq -->
+    <section class="bg-white rounded-3xl sm:flex drop-shadow-[0_15px_25px_rgba(0,0,0,0.25)]">
+      <div class="sm:w-1/2 relative h-20 flex justify-center">
+        <img class="absolute hidden sm:block z-20 -left-[5rem] top-[19rem]" src="./public/images/illustration-box-desktop.svg" alt="box">
+        <picture class="absolute w-72 h-52 max-w-[15rem] -top-[6.8rem] sm:max-w-none sm:top-[10rem] z-10 sm:w-auto sm:h-auto sm:-left-[5rem] ">
+          <source srcset="./public/images/illustration-woman-online-desktop.svg" media="(min-width: 640px)">
+          <img src="./public/images/illustration-woman-online-mobile.svg" alt="woman">
+        </picture>
+        <picture class="absolute top-3 sm:top-auto sm:-left-[10rem] sm:-translate-x-20 sm:-bottom-[37rem]">
+          <source srcset="./public/images/bg-pattern-desktop.svg" media="(min-width: 640px)">
+          <img src="./public/images/bg-pattern-mobile.svg" alt="pattern">
+        </picture>
+      </div>
+      
+      <div class="sm:w-1/2 px-6 pb-12 sm:pr-20 sm::pl-0 pt-16 sm:pb-20">
+        <h1 class="font-bold text-center sm:text-left text-3xl mb-7 text-bluish-900">FAQ</h1>
+        <ul>
+          <li class="list__item group">
+            <div class="flex items-start" data-action="toggle">
+              <h2 class="list__item-title">How many team members can I invite?</h2>
+              <svg class="list__item-arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+              </svg>
+            </div>
+            <p class="list__item-desc">You can invite up to 2 additional users on the Free plan. There is
+              no limit on
+              team members for the Premium plan.</p>
+          </li>
+          <li class="list__item group is-opened">
+            <div class="flex items-start" data-action="toggle">
+              <h2 class="list__item-title">What is the maximum file upload size?</h2>
+              <svg class="list__item-arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+              </svg>
+            </div>
+            <p class="list__item-desc">No more than 2GB. All files in your
+              account must fit your allotted storage space.</p>
+          </li>
+          <li class="list__item group">
+            <div class="flex items-start" data-action="toggle">
+              <h2 class="list__item-title">How do I reset my password?</h2>
+              <svg class="list__item-arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+              </svg>
+            </div>
+            <p class="list__item-desc">Click “Forgot password” from the login page or “Change password”
+              from your profile page.
+              A reset link will be emailed to you.</p>
+          </li>
+          <li class="list__item group">
+            <div class="flex items-start" data-action="toggle">
+              <h2 class="list__item-title">Can I cancel my subscription?</h2>
+              <svg class="list__item-arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+              </svg>
+            </div>
+            <p class="list__item-desc">Yes! Send us a message and we’ll process your request no
+              questions asked.</p>
+          </li>
+          <li class="list__item group">
+            <div class="flex items-start" data-action="toggle">
+              <h2 class="list__item-title">Do you provide additional support?</h2>
+              <svg class="list__item-arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+              </svg>
+            </div>
+            <p class="list__item-desc">Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>

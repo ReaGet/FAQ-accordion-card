@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list__item {
+  @apply border-b border-bluish-100 py-5;
+}
+
+.list__item-arrow {
+  @apply ml-auto mt-[0.6rem] shrink-0 group-[.is-opened]:rotate-180;
+}
+
+.list__item-title {
+  @apply text-bluish-900 group-[.is-opened]:font-bold;
+}
+
+.list__item-desc {
+  @apply text-bluish-700/90 hidden mt-5 group-[.is-opened]:block;
+}
